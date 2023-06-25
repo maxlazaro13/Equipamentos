@@ -1,0 +1,248 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --bg-fundo: #DFDFDF;
+    --bg-verde: rgba(1, 181, 116, 13%);
+    --fundo-botao1: #CF4B83;
+    --cor_verde:#01B574;
+}
+.container {
+    /* border: 4px solid red; */
+
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-fundo)
+}
+ 
+.cabecalho {
+    /* border: 2px solid blue; */
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    padding: 20px 20px;
+    margin: 20px;
+}
+
+.titulo_cabecalho {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction:  column;
+    align-items:end;
+    gap: 5px;
+}
+
+.claro_escuro_img {
+    /* border: 3px solid black; */
+    background-color: #01B574;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    width: 85px;
+}
+
+.claro_escuro_img > img {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    width: 75px;
+    height: 25px;
+}
+
+.image {
+    /* border: 2px solid rgb(255, 0, 221); */
+    display: flex;
+
+}
+
+.image > img {
+    /* border: 1px solid black; */
+
+    width: 30px;
+    margin-right: 10px;
+}
+
+.image > p {
+    /* border: 1px solid blue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Tajawal', sans-serif;
+    font-weight: bold;
+    font-size:20px;
+}
+
+.corpo_body {
+    /* border: 2px solid blue; */
+    display: flex;
+    padding: 20px 20px;
+    margin: 20px;
+    flex: 1;
+    background-color: #F4F4F4;
+    border-radius: 30px;
+}
+
+.corpo {
+    /* border:  3px solid #01B574; */
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    padding: 20px 20px;
+    flex: 1;
+    border-radius: 20px;
+    background-color: #F4F4F4;
+}
+
+.body {
+    /* border: 2px solid goldenrod; */
+    display: flex;
+    flex-direction:column;
+    gap: 10px;
+}
+
+.header_input {
+    /* border: 2px solid black; */
+}
+
+.header_input > input {
+    border-radius: 5px;
+    background-color: var(--bg-verde);
+    height: 28px;  
+    border:none;  
+    outline: none;
+}
+
+.header_input > input::placeholder{
+    color: black;
+} 
+
+.header_botoes {
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: row ;
+    gap: 15px;
+}
+
+.primeito_btn > button {
+    border: none;   
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--fundo-botao1);
+    border-radius:5px;
+    padding: 5px 10px;
+}
+
+.primeito_btn  img {
+    /* border: 1px solid blue; */
+    width: 20px;
+}
+
+.botao1 {
+    border:none;
+    border-radius: 7px;
+    display: flex;
+    width: 70px;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--bg-verde);  
+    padding: 5px 10px;
+    
+}
+
+.img1 {
+    /* border: 1px solid red; */
+    width: 16px;
+    margin-top: -1px;
+}
+
+.botao2 {
+    border: none;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    background-color: var(--bg-verde);  
+    padding: 5px 10px;
+    gap: 5px;
+} 
+
+.img2 {
+    /* border: 1px solid red; */
+    width: 16px;
+    margin-top: -1px;
+} 
+
+
+
+
+
+
+
+
+
+
+
+section {
+    /* border: 8px solid hotpink; */
+    display: flex;
+    flex-direction: column;
+}
+
+table{
+    /* border: 3px solid yellow; */
+    font-family: 'Titillium Web', sans-serif;
+
+}
+
+.linha_impar{
+    background-color: var(--bg-verde);
+}
+
+tr {
+    /* border: 1px solid red; */
+    display: flex;
+    height: 40px;
+    border-radius: 10px;
+
+}
+
+td, th{
+    /* border: 1px solid blue; */
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cor_verde {
+    color: var(--cor_verde);
+}
+
+
+@media screen and (max-width:400px){
+    .header_botoes {
+        flex-direction: column;
+    }
+
+    table {
+        /* display: none; */
+    }
+
+    .tabela_container {
+        /* overflow: hidden; */
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+
+    td, th {
+        padding: 0px 10px;
+        white-space: nowrap;
+    }
+}
